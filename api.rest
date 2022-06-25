@@ -1,0 +1,3 @@
+###plguin: REST Client
+### 模版项目
+GET https://gitlab.com/api/v4/groups/13682649/projects
