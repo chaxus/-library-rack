@@ -1,10 +1,10 @@
 {
-  "name": "rackcli",
+  "name": "@libart/rack",
   "version": "0.0.5",
   "description": "用于生成打包的脚手架",
   "main": "index.js",
-  "repository": "git@gitlab.com:ranzhouhang/pack-cli.git",
-  "author": "ranzhouhang",
+  "repository": "git@github.com:chaxus/-library-rack.git",
+  "author": "chaxus",
   "license": "MIT",
   "bin": {
     "rack": "./bin/cli.js"
@@ -13,9 +13,9 @@
     "axios": "^0.22.0",
     "chalk": "^4.1.2",
     "commander": "^8.2.0",
-    "download-git-repo": "^3.0.2",
     "figlet": "^1.5.2",
     "fs-extra": "^10.0.0",
+    "handlebars": "^4.7.7",
     "inquirer": "^8.2.0"
   }
 }

@@ -1,3 +1,10 @@
 ###plguin: REST Client
+@contentType = application/vnd.github.v3+json
+@authorization = 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
 ### 模版项目
 GET https://gitlab.com/api/v4/groups/13682649/projects
+
+### 获取当前用户的所有项目
+GET https://api.github.com/chaxus/-library-template
+Content-Type: {{contentType}}
+Authorization: {{authorization}}

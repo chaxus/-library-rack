@@ -5,11 +5,12 @@ const chalk = require('chalk')
 const figlet = require('figlet')
 
 program
+    .version('0.1.0')
     // 定义命令和参数
     .command('init <app-name>')
-    // 定义上述命令的藐视
+    // 定义上述命令的描述
     .description('create a new project')
-    // 定义选项-f和其藐视
+    // 定义选项-f和其描述
     .option('-f', '--force', 'overwrite target directory if it exist')
     // 定义行为
     .action((name, option) => {
@@ -50,7 +51,7 @@ program
 program
     .on('--help', () => {
         // 使用 figlet 绘制 Logo
-        console.log('\r\n' + figlet.textSync('ran', {
+        console.log('\r\n' + figlet.textSync('rack', {
             font: 'Ghost',
             horizontalLayout: 'default',
             verticalLayout: 'default',
@@ -58,7 +59,7 @@ program
             whitespaceBreak: true
         }));
         // 新增说明信息
-        console.log(`\r\nRun ${chalk.cyan(`roc <command> --help`)} show details\r\n`)
+        console.log(`\r\nRun ${chalk.cyan(`rack <command> --help`)} show details\r\n`)
     })
 // 解析用户执行命令的传入参数
 program.parse(process.argv);
