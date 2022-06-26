@@ -1,4 +1,3 @@
-#! /usr/bin/env node
 
 const program = require('commander')
 const chalk = require('chalk')
@@ -14,7 +13,7 @@ program
     .option('-f', '--force', 'overwrite target directory if it exist')
     // 定义行为
     .action((name, option) => {
-        require('../lib/create')(name, option)
+        require('./lib/create')(name, option)
     })
 program
     .version(`v${require('../package.json').version}`)
@@ -45,7 +44,7 @@ program
     // 监听 --help 执行
     .on('--help', () => {
         // 新增说明信息
-        console.log(`\r\nRun ${chalk.cyan(`rack <command> --help`)} for detailed usage of given command\r\n`)
+        console.log(`\r\nRun ${chalk.cyan('rack <command> --help')} for detailed usage of given command\r\n`)
     })
 
 program
@@ -59,7 +58,7 @@ program
             whitespaceBreak: true
         }));
         // 新增说明信息
-        console.log(`\r\nRun ${chalk.cyan(`rack <command> --help`)} show details\r\n`)
+        console.log(`\r\nRun ${chalk.cyan('rack <command> --help')} show details\r\n`)
     })
 // 解析用户执行命令的传入参数
 program.parse(process.argv);

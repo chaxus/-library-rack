@@ -2,3 +2,8 @@ node_modules
 package-lock.json
 yarn.lock
 api.rest
+rollup.config.js
+.eslintrc.js
+bin
+lib
+.gitignore
