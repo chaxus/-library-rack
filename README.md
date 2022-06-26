@@ -2,7 +2,11 @@
 
 Generate various template cli
 
-- how to use：
+# install 
+
+npm install stocks-rack -g
+
+# how to use：
 ```
 rack create <app name>
 ```

@@ -1,6 +1,6 @@
 {
   "name": "stocks-rack",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Used to generate all kinds of template",
   "main": "index.js",
   "repository": "git@github.com:chaxus/-library-rack.git",

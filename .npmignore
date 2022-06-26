@@ -7,3 +7,4 @@ rollup.config.js
 bin
 lib
 .gitignore
+main.js
