@@ -1,8 +1,7 @@
 {
   "name": "stocks-rack",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Used to generate all kinds of template",
-  "main": "index.js",
   "repository": "git@github.com:chaxus/-library-rack.git",
   "author": "chaxus",
   "license": "MIT",
@@ -30,5 +29,8 @@
     "rollup": "^2.75.7",
     "rollup-plugin-eslint": "^7.0.0",
     "rollup-plugin-terser": "^7.0.2"
-  }
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
