@@ -1,5 +1,5 @@
 {
-  "name": "@library/rack",
+  "name": "@bank/rack",
   "version": "0.0.4",
   "description": "Used to generate all kinds of template",
   "main": "index.js",
