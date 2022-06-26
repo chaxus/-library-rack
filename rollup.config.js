@@ -1,5 +1,5 @@
-import resolve from 'rollup-plugin-node-resolve';
-import babel from 'rollup-plugin-babel';
+import resolve from '@rollup/plugin-node-resolve';
+import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser'; 
 import { eslint } from 'rollup-plugin-eslint';
 import json from '@rollup/plugin-json';
@@ -21,10 +21,7 @@ export default [
         include: ['main.js'],
         exclude: ['node_modules/**'],
       }),
-      babel({
-        exclude: 'node_modules/**',
-        runtimeHelpers: true,
-      }),
+      babel({ babelHelpers: 'bundled' }),
       terser()
     ],
   },
